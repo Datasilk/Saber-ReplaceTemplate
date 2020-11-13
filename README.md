@@ -1,13 +1,21 @@
 # Saber-ReplaceTemplate
-A vendor plugin for [Saber](https://github.com/Datasilk/Saber) that allows webmasters to replace the template website that is included with Saber with the currently published website.
-
-This was meant to be an internal tool used by Saber developers to update the official template website that is loaded when the user first runs a new copy of Saber in Visual Studio.
+A vendor plugin for [Saber](https://saber.datasilk.io) that allows users to replace the template website that is included with Saber with the currently published website. This is useful if you plan on distributing a copy of Saber with a custom template website preinstalled.
 
 ### Prerequisites
-* Visual Studio 2017
-* Clone [Saber](https://github.com/Datasilk/Saber) repository
+* [Saber](https://saber.datasilk.io) ([latest release](https://github.com/Datasilk/Saber/releases))
 
 ### Installation
-* Clone this repository inside your Saber project within `/App/Vendor/` and name the folder **ReplaceTemplate**
+#### For Visual Studio Users
+* Clone this repository inside your Saber project within `/App/Vendors/` and name the folder **ReplaceTemplate**
 	> NOTE: use `git clone` instead of `git submodule add` since the contents of the Vendor folder is ignored by git
-* Run `gulp default` to copy any required files from the vendor folder into the public `wwwroot` folder
+* Run `gulp default` from the root of your Saber project folder
+
+#### For DevOps Users
+While using the latest release of Saber, do the following:
+* Download latest release of [Saber.Vendor.ReplaceTemplate](https://github.com/Datasilk/Saber-ReplaceTemplate/releases)
+* Extract all files & folders from either the `win-x64` or `linux-x64` zip folder to Saber's `/Vendors/` folder
+
+### Publish
+* run command `./publish.bat`
+* publish `bin/Publish/ReplaceTemplate.7z` as latest release
+

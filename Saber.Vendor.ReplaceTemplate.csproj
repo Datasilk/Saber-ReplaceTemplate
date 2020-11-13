@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Saber.Vendor.ReplaceTemplate</RootNamespace>
     <AssemblyName>Saber.Vendor.ReplaceTemplate</AssemblyName>
     <Authors>Mark Entingh</Authors>
@@ -17,6 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Saber.Vendor" Version="1.0.5" />
+    <PackageReference Include="Saber.Vendor" Version="1.0.6" />
   </ItemGroup>
 </Project>
