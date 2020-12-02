@@ -3,8 +3,9 @@ using System.Linq;
 using System.IO;
 using System.Threading;
 using Saber.Core;
+using Saber.Vendor;
 
-namespace Saber.Vendor.ReplaceTemplate
+namespace Saber.Vendors.ReplaceTemplate
 {
     public class SaberReplaceTemplate : Controller, IVendorController
     {
@@ -35,22 +36,22 @@ namespace Saber.Vendor.ReplaceTemplate
                 {
                     var f = file.ToLower().Replace("/", "\\");
                     var filename = file.Replace("/", "\\").Split("\\")[^1];
-                    if (f.IndexOf("\\content\\pages\\") >= 0)
+                    if (f.Contains("\\content\\pages\\"))
                     {
                         //copy all files from /Content/pages/
                         File.Copy(file, App.MapPath("/Content/temp/pages/" + filename), true);
                     }
-                    else if (f.IndexOf("\\content\\partials\\") >= 0)
+                    else if (f.Contains("\\content\\partials\\"))
                     {
                         //copy all files from /Content/partials/
                         File.Copy(file, App.MapPath("/Content/temp/partials/" + filename), true);
                     }
-                    else if (f.IndexOf("\\css\\website.less") >= 0)
+                    else if (f.Contains("\\css\\website.less"))
                     {
                         //copy all files from /CSS
                         File.Copy(file, App.MapPath("/Content/temp/app-css/" + filename), true);
                     }
-                    else if (f.IndexOf("\\wwwroot\\") >= 0)
+                    else if (f.Contains("\\wwwroot\\"))
                     {
                         //copy all files from wwwroot
                         var newdir = string.Join('\\', file.Replace("/", "\\")

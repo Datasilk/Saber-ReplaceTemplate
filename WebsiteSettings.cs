@@ -1,11 +1,12 @@
 ﻿using Saber.Core;
+using Saber.Vendor;
 
-namespace Saber.Vendor.ReplaceTemplate
+namespace Saber.Vendors.ReplaceTemplate
 {
-    [ViewPath("/Views/AppSettings/appsettings.html")]
-    public class ViewRenderer : IVendorViewRenderer
+    public class WebsiteSettings : IVendorWebsiteSettings
     {
-        public string Render(IRequest request, View view)
+        public string Name { get; set; } = "Replace Template";
+        public string Render(IRequest request)
         {
             var settingsView = new View("/Vendors/ReplaceTemplate/replacetemplate.html");
             request.AddScript("/editor/js/vendors/replacetemplate/replacetemplate.js");
