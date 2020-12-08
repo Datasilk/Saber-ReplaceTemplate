@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>Saber.Vendor.ReplaceTemplate</RootNamespace>
-    <AssemblyName>Saber.Vendor.ReplaceTemplate</AssemblyName>
+    <RootNamespace>Saber.Vendors.ReplaceTemplate</RootNamespace>
+    <AssemblyName>Saber.Vendors.ReplaceTemplate</AssemblyName>
     <Authors>Mark Entingh</Authors>
     <Company>Datasilk</Company>
     <Description>A vendor plugin for Saber (https://saber.datasilk.io/saber) that allows administrators to replace the default template website with the current website. This can be useful for releasing custom Saber releases with a special template website installed.</Description>
