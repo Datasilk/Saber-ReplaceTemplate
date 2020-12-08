@@ -11,7 +11,7 @@ namespace Saber.Vendors.ReplaceTemplate
     {
         public override string Render(string body = "")
         {
-            if (!CheckSecurity()) { return Error("Access Denied"); }
+            if (!CheckSecurity()) { return AccessDenied(); }
             try
             {
                 //first, delete the temp folder (keep README.md)
