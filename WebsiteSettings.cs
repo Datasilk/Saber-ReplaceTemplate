@@ -9,7 +9,7 @@ namespace Saber.Vendors.ReplaceTemplate
         public string Render(IRequest request)
         {
             var settingsView = new View("/Vendors/ReplaceTemplate/replacetemplate.html");
-            request.AddScript("/editor/js/vendors/replacetemplate/replacetemplate.js");
+            request.AddScript("/editor/vendors/replacetemplate/replacetemplate.js");
             return settingsView.Render();
         }
     }

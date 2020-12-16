@@ -46,7 +46,7 @@ namespace Saber.Vendors.ReplaceTemplate
                         //copy all files from /Content/partials/
                         File.Copy(file, App.MapPath("/Content/temp/partials/" + filename), true);
                     }
-                    else if (f.Contains("\\css\\website.less"))
+                    else if (f.Contains("\\content\\website.less"))
                     {
                         //copy all files from /CSS
                         File.Copy(file, App.MapPath("/Content/temp/app-css/" + filename), true);

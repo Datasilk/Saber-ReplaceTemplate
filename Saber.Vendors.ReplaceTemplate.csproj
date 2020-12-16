@@ -5,7 +5,7 @@
     <AssemblyName>Saber.Vendors.ReplaceTemplate</AssemblyName>
     <Authors>Mark Entingh</Authors>
     <Company>Datasilk</Company>
-    <Description>A vendor plugin for Saber (https://saber.datasilk.io/saber) that allows administrators to replace the default template website with the current website. This can be useful for releasing custom Saber releases with a special template website installed.</Description>
+    <Description>A vendor plugin for Saber (https://saber.datasilk.io/saber) that allows administrators to replace the default template website with the current website. This can be useful for deploying custom Saber releases with a special template website installed.</Description>
     <Copyright>2020 Datasilk</Copyright>
     <PackageProjectUrl></PackageProjectUrl>
     <RepositoryUrl>https://www.github.com/Datasilk/Saber-ReplaceTemplate</RepositoryUrl>
