@@ -1,6 +1,6 @@
 ﻿(function () {
-    $('.replace-template button').on('click', () => {
-        $.ajax({
+    S('.replace-template button').on('click', () => {
+        S.ajax({
             url: '/SaberReplaceTemplate',
             complete: () => {
                 alert('Template website replaced successfully');
